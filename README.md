@@ -13,6 +13,7 @@ GitHub Search App is a React-based application that allows users to easily searc
 - **Uses Deboucing**: Improves performance and reduce unnecessary renders
 - **Redux Persists**: Tool used to seamlessly save the application’s Redux state object to AsyncStorage
 
+In this application we are using redux-persist to store our state locally, so that on refreshing the page we do not loss our data. And debouncing is used to avoid unnecessary renders and unnecessary api calls to the backend as when we search for a user or a repository and type a character it does make  unnecessary api calls and renders if debounce is not used.
 
 
 ## Technologies Used
