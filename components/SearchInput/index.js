@@ -6,6 +6,7 @@ import { debounce } from 'lodash';
 function SearchInput() {
     const [input, setInput] = useState('');
     const [entityType, setEntityType] = useState('users');
+    const dispatch = useDispatch();
 
     const handleSearch = useCallback(
         debounce((term, type) => {
