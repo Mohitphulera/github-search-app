@@ -1,0 +1,112 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+  margin-left: 20px;
+}
+
+.header img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.search-section {
+  display: flex;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  justify-content: space-between;
+}
+
+.search-input {
+  flex: 1;
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ddd;
+}
+
+.dropdown {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background-color: #e0e0e0;
+  height: 150px;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .grid {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.user-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.user-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center; 
+  padding: 10px; 
+}
+
+.user-info {
+  overflow-wrap: break-word;
+}
+
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 20px;  
+}
+
+.header-text h2, .header-text p {
+  margin: 0; 
+}
+
+.header-text p{
+  color: #a5a5a5;
+}
+
+.repo-card {
+  width: 300px;
+  padding: 20px;
+  background-color: #e0e0e0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px; 
+  transition: 0.3s;
+  margin: 20px;
+}
+
+.repo-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
